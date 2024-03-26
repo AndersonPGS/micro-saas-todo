@@ -27,7 +27,6 @@ export function MainSidebar() {
     <DashboardSidebar>
       <DashboardSidebarHeader className="flex items-center gap-2">
         <Logo />
-        <h1 className=" font-bold">Tasks</h1>
       </DashboardSidebarHeader>
       <DashboardSidebarMain className="flex flex-col flex-grow">
         <DashboardSidebarNav>
