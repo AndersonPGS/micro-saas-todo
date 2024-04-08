@@ -18,7 +18,13 @@ type UserDropdownProps = {
 }
 
 export function UserDropdown({ user }: UserDropdownProps) {
-  if (!user) return
+  if (!user)
+    return (
+      <Button onClick={() => signOut()} className="w-full">
+        <ExitIcon className="size-3 mr-3" />
+        Re-login
+      </Button>
+    )
 
   return (
     <DropdownMenu>
